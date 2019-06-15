@@ -1,0 +1,10 @@
+data
+checkpoints/
+eigen_model/
+kitti_model/
+src/*.pyc
+test/*.pyc
+testing/
+training/
+validation/
+*.pyc
