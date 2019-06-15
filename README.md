@@ -37,7 +37,7 @@ python setup/prep_kitti_eigen_split_data.py
 python setup/prep_kitti_kitti_split_data.py
 ```
 
-## Training Monocular Disparity Network
+## Training the Monocular Disparity Network
 
 For training on KITTI Eigen Split:
 
@@ -73,11 +73,11 @@ python src/train_monodispnet.py \
 --checkpoint_path checkpoints/kitti_model
 ```
 
-## Evaluation on KITTI 2015 Disparity Benchmark
+## Evaluation on KITTI Eigen Split and KITTI 2015 Split Benchmark
 
 Run the following script to evaluate your model:
 
-Evaluating KITTI Eigen Split
+Generating output for KITTI Eigen Split
 
 ```
 python src/run_monodispnet.py \
@@ -86,6 +86,8 @@ python src/run_monodispnet.py \
 --output_path checkpoints/eigen_model/outputs \
 --max_disparity 0.33
 ```
+
+Evaluating KITTI Eigen Split
 
 ```
 python src/evaluate_kitti.py \
@@ -96,7 +98,8 @@ python src/evaluate_kitti.py \
 --max_depth 80
 ```
 
-Evaluating KITTI KITTI Split
+Generating output for KITTI KITTI 2015 Split
+
 ```
 python src/run_monodispnet.py \
 --im0_path testing/kitti_tst_im0.txt \
@@ -105,10 +108,20 @@ python src/run_monodispnet.py \
 --max_disparity 0.33
 ```
 
+Evaluating KITTI 2015 Split
+
 ```
 python src/evaluate_kitti.py \
 --npy_path checkpoints/kitti_model/outputs/disparities.npy \
 --ims_path testing/kitti_tst_im0.txt \
 --gts_path testing/kitti_tst_gtd.txt \
 --split kitti
+```
+
+## Downloading Pre-trained Models 
+
+To get the pre-trained models on Eigen and KITTI split and output disparities please visit:
+
+```
+https://tinyurl.com/y2adhhb3
 ```
