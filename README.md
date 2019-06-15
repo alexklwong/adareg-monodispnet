@@ -1,20 +1,22 @@
 # Bilateral Cyclic Constraint and Adaptive Regularization for Unsupervised Monocular Depth Prediction
 
 Author: Alex Wong <alexw@cs.ucla.edu>
+
 If you use this code, please cite the following paper:
-A. Wong, B. W. Hong and S. Soatto. Bilateral Cyclic Constraint and Adaptive Regularization for Unsupervised Monocular Depth Prediction.
+
+A. Wong, B. W. Hong and S. Soatto. Bilateral Cyclic Constraint and Adaptive Regularization for Unsupervised Monocular Depth Prediction.  
 https://arxiv.org/abs/1903.07309
 
-@article{wong2018bilateral,
-  title={Bilateral Cyclic Constraint and Adaptive Regularization for Unsupervised Monocular Depth Prediction},
-  author={Wong, Alex and Hong, Byung-Woo and Soatto, Stefano},
-  journal={arXiv preprint arXiv:1903.07309},
-  year={2019}
+@article{wong2018bilateral,  
+  title={Bilateral Cyclic Constraint and Adaptive Regularization for Unsupervised Monocular Depth Prediction},  
+  author={Wong, Alex and Hong, Byung-Woo and Soatto, Stefano},  
+  journal={arXiv preprint arXiv:1903.07309},  
+  year={2019}  
 }
 
 ## Getting Started
 
-The following guide assumes that you are located in the root directory of this repository
+The following guide assumes that you are located in the root directory of this repository  
 and that you have Tensorflow 1.0+ installed
 
 Create a symbolic link to your dataset directory
